@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>計算機アプリ</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="calculator" aria-label="電卓">
+      <h1>計算機アプリ</h1>
+      <label for="display" class="sr-only">計算結果</label>
+      <input id="display" class="display" type="text" readonly value="0" />
+      <div class="keys" role="group" aria-label="数字と演算子">
+        <button data-action="clear" class="key key--wide">AC</button>
+        <button data-action="delete" class="key">⌫</button>
+        <button data-action="operator" data-value="/" class="key key--operator">÷</button>
+
+        <button data-action="number" data-value="7" class="key">7</button>
+        <button data-action="number" data-value="8" class="key">8</button>
+        <button data-action="number" data-value="9" class="key">9</button>
+        <button data-action="operator" data-value="*" class="key key--operator">×</button>
+
+        <button data-action="number" data-value="4" class="key">4</button>
+        <button data-action="number" data-value="5" class="key">5</button>
+        <button data-action="number" data-value="6" class="key">6</button>
+        <button data-action="operator" data-value="-" class="key key--operator">−</button>
+
+        <button data-action="number" data-value="1" class="key">1</button>
+        <button data-action="number" data-value="2" class="key">2</button>
+        <button data-action="number" data-value="3" class="key">3</button>
+        <button data-action="operator" data-value="+" class="key key--operator">＋</button>
+
+        <button data-action="number" data-value="0" class="key key--wide">0</button>
+        <button data-action="decimal" data-value="." class="key">.</button>
+        <button data-action="equals" class="key key--equals">=</button>
+      </div>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
